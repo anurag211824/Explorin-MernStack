@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <tr>
+          <td colspan="3" class="form-heading">User Information Form</td>
+        </tr>
+        <form>
+          <tr>
+            <td><label for="name">Name:</label></td>
+            <td colspan="2"><input type="text" id="name" /></td>
+          </tr>
+          <tr>
+            <td><label for="email">Email:</label></td>
+            <td colspan="2"><input type="email" id="email" /></td>
+          </tr>
+          <tr>
+            <td><label for="pass">Password:</label></td>
+            <td colspan="2"><input type="password" id="pass" /></td>
+          </tr>
+          <tr>
+            <td>Gender:</td>
+            <td>
+              <input type="radio" id="male" name="gender" />
+              <label for="male">Male</label>
+            </td>
+            <td>
+              <input type="radio" id="female" name="gender" />
+              <label for="female">Female</label>
+            </td>
+          </tr>
+          <tr>
+            <td>Hobbies:</td>
+            <td>
+              <input type="checkbox" id="reading" />
+              <label for="reading">Reading</label>
+            </td>
+            <td>
+              <input type="checkbox" id="eating" />
+              <label for="eating">Eating</label>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="country">Country:</label></td>
+            <td colspan="2">
+              <select name="country" id="country">
+                <option value="India">India</option>
+                <option value="usa">USA</option>
+                <option value="Italy">Italy</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="area">Comments:</label></td>
+            <td colspan="2">
+              <textarea name="area" id="area" rows="5" cols="5"></textarea>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="f">Upload profile pic:</label></td>
+            <td colspan="2"><input type="file" id="f" /></td>
+          </tr>
+          <tr>
+            <td><label for="birthDay">Birthday:</label></td>
+            <td colspan="2"><input type="date" id="birthDay" /></td>
+          </tr>
+          <tr>
+            <td><label for="rate">Rating:</label></td>
+            <td colspan="2"><input type="range" id="rate" /></td>
+          </tr>
+          <tr>
+            <td colspan="3" style="text-align: center;">
+              <input type="submit" id="sub" />
+            </td>
+          </tr>
+        </form>
+      </table>
+</body>
+</html>

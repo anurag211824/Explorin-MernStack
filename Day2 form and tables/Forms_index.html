@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <form autocomplete="on">
+      <!-- Text input for username -->
+      <div>
+        <label for="username">Enter your username</label>
+        <input
+          type="text"
+          id="username"
+          name="username"
+          placeholder="Enter your name"
+          required
+        />
+      </div>
+
+      <!-- Radio buttons for gender selection -->
+      <div>
+        <input type="radio" id="male" name="gender" value="male" />
+        <label for="male">male</label>
+        <input type="radio" id="female" name="gender" value="female" />
+        <label for="female">female</label>
+        <input type="radio" id="others" name="gender" value="others">
+        <label for="others">others</label>
+      </div>
+
+      <!-- Checkbox for subscription -->
+      <div>
+        <input type="checkbox" id="Subscribe" name="Subscribe" value="yes">
+        <label for="Subscribe">Subscribe to this Webpage</label>
+        <input type="checkbox" id="click_bell_icon" name="click_bell_icon" value="yes">
+        <label for="click_bell_icon">click_bell_icon</label>
+      </div>
+
+      <!-- Textarea for comments -->
+      <div>
+        <label for="comment">Enter your comment<br /></label>
+        <textarea name="comment" rows="4" cols="35"></textarea>
+      </div>
+
+      <!-- Dropdown for selecting a fruit -->
+      <div>
+        <label for="fruit">Select a fruit</label>
+        <select id="fruit" name="fruit">
+          <option value="apple">Apple</option>
+          <option value="banana">Banana</option>
+          <option value="mango">Mango</option>
+          <option value="watermelon">Watermelon</option>
+        </select>
+      </div>
+
+      <!-- Date input field -->
+      <div>
+        <label for="Date">Date</label>
+        <input type="date" id="Date" name="date" />
+      </div>
+
+      <!-- File upload input field -->
+      <div>
+        <label for="File">File</label>
+        <input type="file" id="File" name="file" />
+      </div>
+
+      <!-- Submit button -->
+      <div>
+        <input type="submit" />
+      </div>
+
+      <!-- range -->
+      <div>
+        <label for="Range">Range</label>
+        <input type="range" id="Range" name="file" />
+      </div>
+      <div>
+        <label for="Button">Submit</label>
+        <input type="button" value="Submit" id="Button" />
+      </div>
+    </form>
+  </body>
+</html>
+
+create a basic form something like aadhar card form

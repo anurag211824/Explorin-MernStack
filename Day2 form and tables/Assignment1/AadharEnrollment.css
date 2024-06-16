@@ -1,0 +1,75 @@
+.main{
+    margin:40px;
+}
+.head {
+    height: 20px;
+    padding: 5px;
+    text-align: center;
+    align-items: center;
+    background-color: rgb(240, 21, 21);
+    font-weight: 500;
+    color: aliceblue;
+}
+
+.box1 {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    font-size: medium;
+}
+
+.date {
+    display: flex;
+    justify-content: space-around;
+}
+
+.one, .two, .three {
+    border: 1px solid black;
+}
+
+.resident {
+    text-align: center;
+    background-color: rgb(240, 21, 21);
+    color: aliceblue;
+    padding: 2px;
+}
+
+.box2 {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 5px;
+}
+
+.mainDetails {
+    margin-left: 20%;
+    padding: 10px;
+    justify-content: space-around;
+}
+
+.form-group {
+    margin-bottom: 10px; /* Add space between form groups */
+    display: flex;
+    align-items: center;
+}
+
+label {
+    width: 220px; /* Set a fixed width for the labels */
+}
+
+.first {
+    width: calc(100% - 220px); /* Ensure input fields take the remaining space */
+    border: 1px solid black;
+    padding: 5px; /* Add some padding for better appearance */
+}
+
+form {
+    width: 80%; /* Control the overall width of the form */
+}
+.extra{
+    display: flex;
+    flex-direction: column;
+}
+.but{
+    background-color: greenyellow;
+    color: green;
+}

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aadhar Enrollment form</title>
+    <link rel="stylesheet" href="AadharEnrollment.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="head">CERTIFICATE FOR AADHAR ENROLMENT/UPDATE</div>
+    <br />
+    <div class="box1">
+      <div class="instruction">
+        <b>Instruction</b>:All details to be filled in capital letters <br />
+        <br />
+        To be printed in plain A4 size paper
+      </div>
+      <img src="aadhar.png" alt="" height="50px" width="70px">
+      <div class="validity">
+        To be valid for 3 months from date of issue
+        <br />
+        <br />
+        <div class="date">
+          <div class="one">D D</div>
+          <div class="two">M M</div>
+          <div class="three">Y Y Y Y</div>
+        </div>
+      </div>
+    </div>
+    <div class="resident">Resident's Details</div>
+    <div class="box2">
+      <label style="margin: 5px" for="update">Update Request</label>
+      <input type="checkbox" id="update" name="update" />
+
+      <label style="margin: 5px" for="new_enrol">New Enrollment</label>
+      <input type="checkbox" id="new_enrol" name="new_enrol" />
+
+      <label style="margin: 5px" for="nri">Non-Resident-Indian (NRI)</label>
+      <input type="checkbox" id="nri" name="nri" />
+
+      <label style="margin: 5px" for="Resident">Resident</label>
+      <input type="checkbox" id="Resident" name="Resident" />
+    </div>
+    <div class="mainDetails">
+      <form>
+        <div class="form-group">
+          <label for="aadhar_num"><b>Aadhaar Number:</b></label>
+          <input
+            type="text"
+            id="aadhar_num"
+            name="aadhar_num"
+            class="first"
+            placeholder="Enter Aadhaar Number"
+          />
+        </div>
+        <div class="form-group">
+          <label for="fullname"><b>Full Name:</b></label>
+          <input
+            type="text"
+            id="fullname"
+            name="fullname"
+            class="first"
+            placeholder="Enter Full Name"
+          />
+        </div>
+        <div class="form-group">
+          <label for="co"><b>C/o:</b></label>
+          <input
+            type="text"
+            id="co"
+            name="co"
+            class="first"
+            placeholder="Enter C/o (if applicable)"
+          />
+        </div>
+        <div class="form-group">
+          <label for="HouseNo"><b>House No./Bldg./Apt:</b></label>
+          <input
+            type="text"
+            id="HouseNo"
+            name="HouseNo"
+            class="first"
+            placeholder="Enter House No./Bldg./Apt"
+          />
+        </div>
+        <div class="form-group">
+          <label for="street"><b>Street/Road/Lane:</b></label>
+          <input
+            type="text"
+            id="street"
+            name="street"
+            class="first"
+            placeholder="Enter Street/Road/Lane"
+          />
+        </div>
+        <div class="form-group">
+          <label for="Land"><b>Landmark:</b></label>
+          <input
+            type="text"
+            id="Land"
+            name="Land"
+            class="first"
+            placeholder="Enter Landmark"
+          />
+        </div>
+        <div class="form-group">
+          <label for="Area"><b>Area/Locality/Sector:</b></label>
+          <input
+            type="text"
+            id="Area"
+            name="Area"
+            class="first"
+            placeholder="Enter Area/Locality/Sector"
+          />
+        </div>
+        <div class="form-group">
+          <label for="field8"><b>Village/Town/City:</b></label>
+          <input
+            type="text"
+            id="field8"
+            name="field8"
+            class="first"
+            placeholder="Enter Village/Town/City"
+          />
+        </div>
+        <div class="form-group">
+          <label for="field9"><b>Post Office:</b></label>
+          <input
+            type="text"
+            id="field9"
+            name="field9"
+            class="first"
+            placeholder="Enter Post Office"
+          />
+        </div>
+        <div class="form-group">
+          <label for="field10"><b>District:</b></label>
+          <input
+            type="text"
+            id="field10"
+            name="field10"
+            class="first"
+            placeholder="Enter District"
+          />
+        </div>
+        <div class="form-group">
+          <label for="field11"><b>State:</b></label>
+          <input
+            type="text"
+            id="field11"
+            name="field11"
+            class="first"
+            placeholder="Enter State"
+          />
+        </div>
+        <div class="form-group">
+          <label for="field12"><b>Pin Code:</b></label>
+          <input
+            type="text"
+            id="field12"
+            name="field12"
+            class="first"
+            placeholder="Enter Pin Code"
+          />
+        </div>
+        <div class="form-group">
+          <label for="field13"><b>Date Of Birth:</b></label>
+          <input
+            type="text"
+            id="field13"
+            name="field13"
+            class="first"
+            placeholder="Enter Date of Birth"
+          />
+        </div>
+        <div class="form-group">
+          <label for="photo"><b>Upload Photo:</b></label>
+          <input
+            type="file"
+            id="photo"
+            name="photo"
+            class="first"
+            accept="image/*"
+            placeholder="Choose Photo"
+          />
+        </div>
+        <div class="form-group">
+          <label for="signature"><b>Upload Digital Signature:</b></label>
+          <input
+            type="file"
+            id="signature"
+            name="signature"
+            class="first"
+            accept="image/*"
+            placeholder="Choose Digital Signature"
+          />
+        </div>
+        <div class="form-group">
+          <label for="sub"><b>Submi for Aadhar Update:</b></label>
+          <input
+            type="submit"
+            id="sub"
+            name="sub"
+            class="but"
+            placeholder="Choose Digital Signature"
+          />
+        </div>
+      </form>
+    </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>mern test</title>
+  </head>
+  <body>
+    <h1>Welcome to the HTML Assignment</h1>
+    <ul>
+      <li><a href="#introduction">introduction</a></li>
+      <li><a href="#heading and paragraph">heading and paragraph</a></li>
+      <li><a href="#links">links</a></li>
+      <li><a href="#images">images</a></li>
+      <li><a href="#tables">tables</a></li>
+      <li><a href="#list">list</a></li>
+      <li><a href="#forms">forms</a></li>
+    </ul>
+    <div id="introduction">
+      <h2>Introduction</h2>
+      This section introduce the web page
+    </div>
+    <div id="heading and paragraph">
+      <h2>Heading & paragraph</h2>
+      <h3>Subheading</h3>
+      <p>
+        This is a paragraph with <b>Bold</b>, <i>italic</i> and
+        <u>underline</u> text
+      </p>
+    </div>
+    <div id="links">
+      <h2>Links</h2>
+      <a href="#Example links">Example link</a>
+    </div>
+    <div id="images">
+      <h2>Images</h2>
+      <img src="backlit.webp" alt="img" height="400px" width="900px" />
+    </div>
+    <div id="table">
+      <h2>Table</h2>
+      <table>
+        <tr>
+          <th>header1</th>
+          <th>header2</th>
+          <th>header3</th>
+        </tr>
+        <tr>
+          <td rowspan="2">data1</td>
+          <td>data2</td>
+          <td>data3</td>
+        </tr>
+        <tr>
+          <td>data4</td>
+        </tr>
+        <tr>
+          <td>data5</td>
+          <td>data6</td>
+          <td>data7</td>
+        </tr>
+        <tr>
+          <td>Footer1</td>
+          <td>footer2</td>
+          <td>footer3</td>
+        </tr>
+      </table>
+    </div>
+    <div id="list">
+      <h2>Lists</h2>
+      <u1>
+        <li>Unordered list</li>
+        <li>Unordered list</li>
+      </u1>
+      <ol>
+        <li>ordered list</li>
+        <li>ordered list</li>
+      </ol>
+    </div>
+    <div
+      id="forms"
+      style="
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      "
+    >
+      <h2>Forms</h2>
+      <h2>Personal information</h2>
+      <br />
+      <form class="f">
+        <label for="name">Name:</label>
+        <input type="text" id="name" />
+        <br />
+        <label for="email">Email:</label>
+        <input type="text" id="emali" />
+        <br />
+        <label for="pass">password:</label>
+        <input type="text" id="pass" />
+        <br />
+        Gender:
+        <input type="radio" id="male" name="gender" />
+        <label for="male">male</label>
+        <input type="radio" id="female" name="gender" />
+        <label for="female">Female</label>
+        <br />
+        Hobbies:
+        <input type="checkbox" id="reading" />
+        <label for="Redaing">Redaing</label>
+        <input type="checkbox" id="eating" />
+        <label for="eating">Eating</label>
+        <br />
+        Country:
+        <select name="country" id="country">
+          <option value="India" name="country">India</option>
+          <option value="usa" name="country">Usa</option>
+          <option value="Italy" name="country">Italy</option>
+        </select>
+        <br />
+        Comments
+        <br />
+        <textarea name="area" id="area" rows="5" cols="5"></textarea>
+        <br />
+        Upload profile pic
+        <label for="f"></label>
+        <input type="file" id="f" />
+        <br />
+        BirthDay:
+        <input type="date" />
+        <br />
+        Rating:
+        <input type="range" />
+        <br />
+        <input type="submit" />
+      </form>
+      <br />
+    </div>
+  </body>
+</html>
