@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            height: 500px;
+            width: 600px;
+            display: flex;
+            position: relative;
+            border: 2px solid black;
+            background-color: #27AE60;
+        }
+        .image1, .image2, .image3, .image4, .image5 {
+            width: 150px;
+            height: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+        }
+        .image1 {
+            background-color: #FF5733; /* Orange */
+            /* 
+            position: relative;
+            margin-top: 100px; 
+            
+            Position: relative
+            - The element is positioned relative to its normal position.
+            - The margin-top property shifts it down by 100px from its original position.
+            */
+        }
+        .image2 {
+            background-color: #3F88C5; /* Blue */
+            /* 
+            position: absolute;
+            margin-top: 50px; 
+            
+            Position: absolute
+            - The element is removed from the normal document flow.
+            - It is positioned relative to the nearest positioned ancestor (in this case, .container).
+            - The margin-top property would normally have no effect, use top/bottom/left/right to position it.
+            */
+        }
+        .image3 {
+            background-color: #8E44AD; /* Purple */
+            /* 
+            position: fixed; 
+            
+            Position: fixed
+            - The element is removed from the normal document flow.
+            - It is positioned relative to the browser window, meaning it stays in the same place even when scrolling.
+            */
+        }
+        .image4 {
+            background-color: #2927ae; /* Green */
+            /* 
+            position: sticky;
+            margin-top: 30px; 
+            
+            Position: sticky
+            - The element is treated as relative until it crosses a specified point, then it is treated as fixed.
+            - The margin-top property shifts it down by 30px, and it will stick to that point when scrolling.
+            */
+        }
+        .image5 {
+            background-color: gold;
+        }
+        .box {
+            height: 2000px;
+            width: 600px;
+            border: 2px solid black;
+            background-color: fuchsia;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="image1">Poster 1</div>
+        <div class="image2">Poster 2</div>
+        <div class="image3">Poster 3</div>
+        <div class="image4">Poster 4</div>
+        <div class="image5">Poster 5</div>
+    </div>
+    <div class="box"></div>
+</body>
+</html>
