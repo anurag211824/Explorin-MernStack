@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Container using flexbox for layout */
+        .container {
+            background-color: beige;
+            border: 5px solid black;
+            margin: 2px; /* Margin around the container */
+            padding: 2px; /* Padding inside the container */
+            display: flex; /* Enable flexbox layout */
+            flex-direction: row; /* Arrange items in a row */
+            height: 800px; /* Set the height of the container */
+            justify-content: start; /* Align items at the start of the main axis (row) */
+            align-items: start; /* Align items at the start of the cross axis (column) */
+            align-content: center; /* Align content at the center of the container */
+            /* flex-wrap: wrap; Uncomment to allow wrapping of items */
+        }
+
+        /* Basic styling for each box */
+        .box {
+            /* height: 200px; Uncomment to set a fixed height for each box */
+            /* width: 200px; Uncomment to set a fixed width for each box */
+            border: 2px solid brown;
+            margin: 2px; /* Margin around each box */
+            padding: 2px; /* Padding inside each box */
+        }
+
+        /* Styling for Box 1 */
+        #box1 {
+            background-color: aqua;
+            /* order: 500; Uncomment to set the order of the item */
+            /* flex-shrink: 4; Uncomment to allow the item to shrink more when space is tight */
+            /* flex-grow: 1; Uncomment to allow the item to grow and fill available space */
+            align-self: end; /* Align Box 1 at the end of the cross axis */
+        }
+
+        /* Styling for Box 2 */
+        #box2 {
+            background-color: blue;
+            /* flex-grow: 1; Uncomment to allow the item to grow and fill available space */
+        }
+
+        /* Styling for Box 3 */
+        #box3 {
+            background-color: orange;
+            /* flex-grow: 1; Uncomment to allow the item to grow and fill available space */
+        }
+
+        /* Styling for Box 4 */
+        #box4 {
+            background-color: brown;
+            /* order: -1; Uncomment to set the order of the item */
+            /* flex-grow: 1; Uncomment to allow the item to grow and fill available space */
+            /* flex-basis: 400px; Uncomment to set the base size of the item */
+        }
+    </style>
+</head>
+<body>
+    <!-- Container with four boxes -->
+    <div class="container">
+        <div class="box" id="box1">Box 1</div> <!-- Box 1 styled with background color aqua and aligned to the end -->
+        <div class="box" id="box2">Box 2</div> <!-- Box 2 styled with background color blue -->
+        <div class="box" id="box3">Box 3</div> <!-- Box 3 styled with background color orange -->
+        <div class="box" id="box4">Box 4</div> <!-- Box 4 styled with background color brown -->
+    </div>
+</body>
+</html>
