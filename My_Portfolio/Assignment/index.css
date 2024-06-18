@@ -1,0 +1,267 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  background-color: #303952;
+}
+
+.heading {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.headContent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  color: yellow;
+}
+
+.navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  font-size: larger;
+}
+
+.navigation a:hover {
+  color: yellow;
+}
+
+.navigation ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.navigation ul li {
+  margin-left: 20px;
+  gap: 10px;
+}
+
+.logo {
+  padding-left: 5px;
+  padding-right: 5px;
+  font-weight: 500;
+}
+.home {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.myPhoto {
+  margin-right: 120px;
+}
+.description {
+  margin-left: 50px;
+  width: 70%;
+}
+.description h3 {
+  color: yellow;
+}
+.description h1 {
+  color: white;
+}
+.description p {
+  color: white;
+  font-weight: 400;
+}
+
+.socials {
+  margin-left: 50px;
+}
+.socials img {
+  margin: 5px;
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.skillHead {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin-bottom: 10px;
+  font-family: "Poppins", sans-serif;
+}
+.skillHeadBottom{
+  margin: 20px;
+  p{
+    color: yellow;
+  }
+
+}
+.programmingLang {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.programmingLang img {
+  margin: 10px;
+}
+
+.education {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  margin-bottom: 20px;
+}
+.educationHead {
+  margin-bottom: 30px;
+}
+.educationHeadBottom{
+    p{
+        color: yellow;
+    }
+}
+.educationList {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.educationBox {
+  background-color: #3c4a65;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 250px;
+  text-align: center;
+}
+
+.educationBox h3 {
+  color: yellow;
+  margin-bottom: 10px;
+}
+
+.educationBox p {
+  color: white;
+  font-size: 14px;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  margin-bottom: 50px;
+}
+.projectsHead {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.projectsHeadBottom {
+  color: yellow;
+  margin-bottom: 10px;
+}
+.projectList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.projectBox {
+  background-color: #3c4a65;
+  padding: 20px;
+  border-radius: 10px;
+  margin-left: 30px;
+  margin-right: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  h3 {
+    color: yellow;
+  }
+  font-size: medium;
+}
+.contactContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 0;
+  background-color: #303952;
+}
+
+.contactTitle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.contactTitleBottom {
+  color: yellow;
+  margin-bottom: 20px;
+}
+
+.formBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  max-width: 600px;
+  background-color: #3c4a65;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.formGroup {
+  width: 100%;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.formGroup label {
+  margin-bottom: 5px;
+  color: yellow;
+}
+
+.formGroup input,
+.formGroup textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  background-color: white;
+}
+button[type="submit"] {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: yellow;
+  color: #303952;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #ffa502;
+}
+.copyright{
+    text-align: center;
+    color: white;
+}

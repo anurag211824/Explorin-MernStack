@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio Website</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- This section is for photo and my introduction -->
+    <header class="heading">
+        <div class="headContent">
+            <h2 class="logo">My Portfolio Website</h2>
+        </div>
+        <nav class="navigation">
+            <ul>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#Skills">Skills</a></li>
+                <li><a href="#Education">Education</a></li>
+                <li><a href="#Projects">Projects</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="home" id="Home">
+            <div class="description">
+                <h3>Hi I'm <br></h3>
+                <h1>Anurag Kumar</h1>
+                <p>
+                    Welcome to my portfolio website! I'm a passionate and aspiring
+                    software engineer with a strong desire to create innovative
+                    solutions and push the boundaries of technology.With a deep love for
+                    coding and problem-solving, I am constantly seeking opportunities to
+                    learn and grow in this ever-evolving field.I want to be a good
+                    engineer and contribute to the society and this world.I am
+                    constantly seeking opportunities to learn and grow in this
+                    ever-evolving field.
+                </p>
+            </div>
+            <div class="myPhoto">
+                <img src="images/anu.png" alt="Anurag Kumar" height="250px">
+            </div>
+        </div>
+
+        <!-- This section is for my social media accounts -->
+        <div class="socials">
+            <a href="#"><img src="images/Instagram_logo_2016.svg.webp" alt="Instagram" height="30px"></a>
+            <a href="#"><img src="images/LinkedIn_logo_initials.png" alt="LinkedIn" height="30px"></a>
+            <a href="#"><img src="images/Github-desktop-logo-symbol.svg.png" alt="GitHub" height="30px"></a>
+        </div>
+
+        <!-- This section is for my skills, showing different language I know and used -->
+        <div class="skills" id="Skills">
+            <div class="skillHead"><h2>Skills</h2></div>
+            <div class="skillHeadBottom"><p>
+                These are the programming langauges that i know
+            </p></div>
+            <div class="programmingLang">
+                <img src="images/cLogo.png" alt="C" height="100px">
+                <img src="images/C++_logo.png" alt="C++" height="100px">
+                <img src="images/python.png" alt="Python" height="100px">
+                <img src="images/html.png" alt="HTML" height="95px">
+                <img src="images/css-logo.png" alt="CSS" height="95px">
+                <img src="images/javascript.png" alt="JavaScript" height="95px">
+            </div>
+        </div>
+
+        <!-- This section is showing my Educational qualification -->
+        <div class="education" id="Education">
+            <div class="educationHead"><h2>Education</h2></div>
+            <div class="educationHeadBottom">
+                <p>Here are my Educational Qualifications</p>
+            </div>
+            <div class="educationList">
+                <div class="educationBox">
+                    <h3>Matriculation (10th) : 89 Percent</h3>
+                    <p>BD Public School Patna Bihar India</p>
+                </div>
+                <div class="educationBox">
+                    <h3>Intermediate (12th) : 79 Percent</h3>
+                    <p>AN College Patna Bihar India</p>
+                </div>
+                <div class="educationBox">
+                    <h3>Bachelor Degree In Computer Science And Engineering</h3>
+                    <p>Shivalik College Of Engineering Dehradun Uttarakhand India</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- This section is showing my Projects -->
+        <div class="projects" id="Projects">
+            <div class="projectsHead"><h2>My Projects</h2></div>
+            <div class="projectsHeadBottom">
+                <p>Discover my projects, where creativity meets innovation</p>
+            </div>
+            <div class="projectList">
+                <div class="projectBox">
+                    <h3>Banking App in Console using C++ OOP</h3>
+                    <p>
+                        This project involves creating a simple banking application using
+                        C++ and Object-Oriented Programming principles. It allows users to
+                        perform basic banking operations such as creating an account,
+                        depositing money, withdrawing money, and checking account details,
+                        all through a console interface.
+                    </p>
+                </div>
+                <div class="projectBox">
+                    <h3>Random Quotes Generator</h3>
+                    <p>
+                        This web application generates random inspirational quotes to
+                        motivate users. It uses JavaScript to fetch quotes from an API and
+                        displays a new quote each time the user clicks a button, providing
+                        a fresh dose of inspiration with every interaction.
+                    </p>
+                </div>
+                <div class="projectBox">
+                    <h3>Portfolio Website</h3>
+                    <p>
+                        Created a portfolio website using HTML, CSS, and JavaScript. It serves
+                        as a platform to introduce myself, share my projects, and provide
+                        information about my education and internship.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="contactContent" id="Contact">
+            <div class="contactTitle">
+                <h2>Contact Me</h2>
+                <p class="contactTitleBottom">Get In Touch</p>
+            </div>
+            <div class="formBox">
+                <div class="formGroup">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="formGroup">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="formGroup">
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+                <div class="formGroup">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit">Submit</button>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>
+                Thanks for visiting and happy coding!
+                Copyright 2024. All rights reserved.
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
