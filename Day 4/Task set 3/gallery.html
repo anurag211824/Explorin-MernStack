@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Photo Gallery</title>
+    <link rel="stylesheet" href="gallery.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+body {
+  background-color: #dfe4ea;
+}
+/* header section */
+header {
+  background-color: #2f3542;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.logoAndHeading {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  padding: 5px;
+}
+
+.heading {
+  font-size: x-large;
+  padding: 5px;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+}
+
+nav a {
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+  font-size: large;
+}
+
+nav a:hover {
+  color: rgb(242, 255, 0);
+}
+
+/* mixedPhoto  section */
+.mixedPhotos {
+  margin: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.image {
+  display: flex;
+  width: 500px;
+  padding: 10px;
+}
+
+.image img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+.image:hover img {
+  transform: scale(1.1);
+}
+p {
+  margin: 40px;
+}
+
+.nature {
+  margin: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.wildlife {
+  margin: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.portrait {
+  margin: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.astronomical {
+  margin: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logoAndHeading">
+        <div class="logo">
+          <img src="Gallery_icon.png" alt="" height="40px" />
+        </div>
+        <div class="heading">Interactive Photo Gallery</div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#Nature">Nature Photography</a></li>
+          <li><a href="#Wildlife">Wildlife Photography</a></li>
+          <li><a href="#Portrait">Portrait Photography</a></li>
+          <li><a href="#Astronomical">Astronomical Photography</a></li>
+          <li><a href="#Contact">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <div class="mixedPhotos">
+          <div class="image">
+            <img src="nature.webp" alt="nature" />
+          </div>
+          <div class="image">
+            <img src="nature2.avif" alt="nature2" />
+          </div>
+          <div class="image">
+            <img src="wildlife.avif" alt="wildlife" />
+          </div>
+          <div class="image">
+            <img src="ana.jpg" alt="ana" />
+          </div>
+          <div class="image">
+            <img src="astronomy.jpg" alt="astronomy" />
+          </div>
+        </div>
+        <div class="nature" id="Nature">
+          <div class="image">
+            <img
+              src="https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg?size=626&ext=jpg&ga=GA1.1.1141335507.1718755200&semt=sph"
+              alt="nature1"
+            />
+          </div>
+          <div class="image">
+            <img
+              src="https://static.vecteezy.com/system/resources/previews/030/355/618/large_2x/flowers-in-the-field-mountains-flowers-nature-nature-hd-wallpaper-ai-generated-free-photo.jpg"
+              alt="nature2"
+            />
+          </div>
+          <div class="image">
+            <img
+              src="https://static.vecteezy.com/system/resources/previews/031/535/490/non_2x/flowers-in-the-sun-lake-mountains-flowers-nature-nature-hd-wallpaper-ai-generated-free-photo.jpg"
+              alt="nature3"
+            />
+          </div>
+          <div class="image">
+            <img
+              src="https://wallpapers.com/images/hd/hd-nature-trees-on-grass-rwujzayqg8ip7kyy.jpg"
+              alt="nature4"
+            />
+          </div>
+          <div class="image">
+            <img
+              src="https://static.vecteezy.com/system/resources/previews/030/292/243/large_2x/lotus-flower-the-sun-reflection-water-nature-nature-hd-wallpaper-ai-generated-free-photo.jpg"
+              alt="nature5"
+            />
+          </div>
+        </div>
+
+        <div class="wildlife" id="Wildlife">
+          <div class="image">
+            <img
+              src="https://images.pexels.com/photos/2862070/pexels-photo-2862070.jpeg?cs=srgb&dl=pexels-hendrikcornelissen-2862070.jpg&fm=jpg"
+              alt="wildlife1"
+            />
+          </div>
+          <div class="image">
+            <img
+              src="https://cdn.visualwilderness.com/wp-content/uploads/2020/03/Giraffe-Scale.jpg "
+              alt="wildlife2"
+            />
+          </div>
+          <div class="image">
+            <img
+              src="https://www.thegef.org/sites/default/files/styles/banner_image/public/2021-11/topics_banner_illigalwildlifetrade.jpg?h=4e9a1ef8&itok=DTn6Ypze"
+              alt="wildlife3"
+            />
+          </div>
+          <div class="image">
+            <img
+              src="https://d150u0abw3r906.cloudfront.net/wp-content/uploads/2022/07/MicrosoftTeams-image-4-5.png"
+              alt="wildlife4"
+            />
+          </div>
+          <div class="image">
+            <img
+              src="https://images.news18.com/ibnlive/uploads/2024/03/world-wildlife-day-2024-2024-03-797511002210d60be0db4819d90776eb.jpg?impolicy=website&width=640&height=480"
+              alt="wildlife5"
+            />
+          </div>
+        </div>
+
+        <div class="portrait" id="Portrait">
+          <div class="image">
+            <img
+              src="https://hips.hearstapps.com/hmg-prod/images/robert-downey-jr-attends-the-premiere-of-columbia-pictures-news-photo-1579211396.jpg"
+              alt="portrait1"
+            />
+          </div>
+          <div class="image">
+            <img
+              src="https://hips.hearstapps.com/hmg-prod/images/chris-evans-6431e8876768d.jpg?crop=0.774xw:0.499xh;0.151xw,0.0189xh&resize=1200:*"
+              alt="portrait2"
+            />
+          </div>
+          <div class="image">
+            <img
+              src="https://m.economictimes.com/thumb/msid-102909891,width-1200,height-900,resizemode-4,imgsize-23018/hrithik-roshan-thanked-the-locals-for-their-love-and-support-over-the-years-.jpg"
+              alt="portrait3"
+              
+            />
+          </div>
+          <div class="image">
+            <img
+              src="https://w0.peakpx.com/wallpaper/973/343/HD-wallpaper-emma-watson-american-actress-hollywood-beauty.jpg"
+              alt="portrait4"
+            />
+          </div>
+          <div class="image">
+            <img
+              src="https://i.pinimg.com/736x/c9/a2/6c/c9a26c091d7c479b88df131acbbab8d7.jpg"
+              alt="portrait5"
+            />
+          </div>
+        </div>
+
+        <div class="astronomical" id="Astronomical">
+          <div class="image">
+            <img
+              src="https://sociable.co/wp-content/uploads/2019/06/earth-from-moon.jpg"
+              alt="astronomy1"
+            />
+          </div>
+          <div class="image">
+            <img
+              src="https://st2.depositphotos.com/1011081/9511/i/450/depositphotos_95116980-stock-photo-infinite-space-background-with-silhouette.jpg"
+              alt="astronomy2"
+            />
+          </div>
+          <div class="image">
+            <img
+              src="https://static.toiimg.com/photo/87059386.cms"
+              alt="astronomy3"
+            />
+          </div>
+          <div class="image">
+            <img
+              src="https://famousastronomy.com/wp-content/uploads/2023/11/Notable-Astronomical-Phenomena.jpg"
+              alt="astronomy4"
+              
+            />
+          </div>
+          <div class="image">
+            <img
+              src="https://vajiram-prod.s3.ap-south-1.amazonaws.com/What_is_International_Astronomical_Union_IAU_93ed965095.webp"
+              alt="astronomy5"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+</html>
