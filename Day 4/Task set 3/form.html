@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Web Form</title>
+    <link rel="stylesheet" href="form.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logoAndHeading">
+        <div class="logo">
+          <img src="logo2.png" alt="" height="40px" />
+        </div>
+        <div class="heading">Interactive Web Form</div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#Nature">Personal Information</a></li>
+          <li><a href="#Wildlife">Contact Details</a></li>
+          <li><a href="#Portrait">Preferences</a></li>
+          <li><a href="#Astronomical">Review</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!-- forms using normal form tags and flexbox -->
+      <h2>forms using normal form tags and flexbox</h2>
+      <div class="form1">
+        <form>
+          <div class="input-group">
+            <div class="input-label">
+              <label for="fullName">Full Name:</label>
+            </div>
+            <div class="input-field">
+              <input type="text" id="fullName" name="fullName" required />
+            </div>
+          </div>
+
+          <div class="input-group">
+            <div class="input-label"><label for="email">Email:</label></div>
+            <div class="input-field">
+              <input type="email" id="email" name="email" required />
+            </div>
+          </div>
+
+          <div class="input-group">
+            <div class="input-label">
+              <label for="password">Password:</label>
+            </div>
+            <div class="input-field">
+              <input type="password" id="password" name="password" required />
+            </div>
+          </div>
+
+          <div class="input-group-gender">
+            <div class="input-label">Gender:</div>
+            <div class="input-group-radio">
+              <input type="radio" id="male" name="gender" value="male" />
+              <label for="male">Male</label>
+              <input type="radio" id="female" name="gender" value="female" />
+              <label for="female">Female</label>
+            </div>
+          </div>
+
+          <div class="input-group-Interest">
+            <div class="input-label">Interests:</div>
+            <div class="input-group">
+              <input
+                type="checkbox"
+                id="sports"
+                name="interests"
+                value="sports"
+              />
+              <label for="sports">Sports</label><br />
+              <input
+                type="checkbox"
+                id="music"
+                name="interests"
+                value="music"
+              />
+              <label for="music">Music</label><br />
+              <input
+                type="checkbox"
+                id="books"
+                name="interests"
+                value="books"
+              />
+              <label for="books">Books</label><br />
+            </div>
+          </div>
+
+          <div class="input-group-country">
+            <div class="input-label"><label for="country">Country:</label></div>
+            <div class="input-field">
+              <select id="country" name="country">
+                <option value="usa">USA</option>
+                <option value="canada">Canada</option>
+                <option value="uk">UK</option>
+                <option value="australia">Australia</option>
+                <option value="germany">Germany</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="input-group-message">
+            <div class="input-label"><label for="message">Message:</label></div>
+            <div class="input-field">
+              <textarea id="message" name="message" rows="4"></textarea>
+            </div>
+          </div>
+
+          <div class="input-group-button-submit">
+            <button type="submit">Submit</button>
+          </div>
+        </form>
+      </div>
+      <h2>forms using table with row span and colspan</h2>
+      <div class="form2">
+        <table>
+          <form>
+            <tr>
+              <td><label for="name">Name:</label></td>
+              <td colspan="2"><input type="text" id="name" /></td>
+            </tr>
+            <tr>
+              <td><label for="email">Email:</label></td>
+              <td colspan="2"><input type="text" id="email" /></td>
+            </tr>
+            <tr>
+              <td><label for="pass">Password:</label></td>
+              <td colspan="2"><input type="password" id="pass" /></td>
+            </tr>
+            <tr>
+              <td>Gender:</td>
+              <td>
+                <input type="radio" id="male" name="gender" />
+                <label for="male">male</label>
+              </td>
+              <td colspan="-2">
+                <input type="radio" id="female" name="gender" />
+                <label for="male">female</label>
+              </td>
+            </tr>
+            <tr>
+              <td>Hobbies:</td>
+              <td>
+                <input type="checkbox" id="reading" />
+                <label for="Redaing">Reading</label>
+              </td>
+              <td>
+                <input type="checkbox" id="eating" />
+                <label for="eating">Eating</label>
+              </td>
+            </tr>
+            <tr>
+              <td>Country:</td>
+              <td colspan="2">
+                <select name="country" id="country">
+                  <option value="India" name="country">India</option>
+                  <option value="usa" name="country">Usa</option>
+                  <option value="Italy" name="country">Italy</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td>Comments:</td>
+              <td colspan="2">
+                <textarea name="area" id="area" rows="5" cols="5"></textarea>
+              </td>
+            </tr>
+            <tr>
+              <td>Uplaod profile pic</td>
+              <td colspan="2">
+                <label for="f"></label> <input type="file" id="f" />
+              </td>
+            </tr>
+            <tr>
+              <td><label for="BirthDay">Birthday:</label></td>
+              <td colspan="2"><input type="date" /></td>
+            </tr>
+            <tr>
+              <td><label for="rate">Rating:</label></td>
+              <td colspan="2"><input type="range" /></td>
+            </tr>
+            <tr>
+              <td colspan="3">
+                <input type="submit" id="sub" />
+              </td>
+            </tr>
+          </form>
+        </table>
+      </div>
+    </main>
+  </body>
+</html>
