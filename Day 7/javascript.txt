@@ -1,5 +1,0 @@
- io
- cout<<""
- print()
- variables
- js is a dynamically typed language
