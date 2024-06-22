@@ -1,0 +1,35 @@
+.box{
+    height:70px;
+    width:50px;
+    padding:5px;
+    margin:20px;
+    border:2px solid black;
+    border-radius: 20px;
+    transition-property: all;
+    transition-duration:0.5s;
+    transition-timing-function: ease-in-out;
+}
+#box1{
+ background-color: tomato;
+}
+#box1:hover{
+    transform: scale(2);
+}
+#box2{
+    background-color: yellow;
+}
+#box2:hover{
+    transform: scale(2);
+}
+#box3{
+    background-color: springgreen;
+}
+#box3:hover{
+    transform: scalex(2);
+}
+#box4{
+    background-color:rgb(0, 149, 255);
+}
+#box4:hover{
+    transform: scaley(2);
+}

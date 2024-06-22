@@ -32,8 +32,13 @@ for (let pTag of pTags) {
 // Add event listeners for mouse hover and mouse out
 let heading = document.getElementById("heading");
 heading.addEventListener("mouseover", function() {
-    this.innerHTML = "Hovered";
+    heading.innerHTML = "Hovered";
 });
 heading.addEventListener("mouseout", function() {
-    this.innerHTML = "Unhovered";
+    heading.innerHTML = "Unhovered";
 });
+
+
+document.onscrollend= () =>{
+    console.log("you scroll the page");
+}

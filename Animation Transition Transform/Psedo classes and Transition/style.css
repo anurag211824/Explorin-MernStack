@@ -1,0 +1,22 @@
+.button{
+    height:20px;
+    width:100px;
+    background-color: violet;
+    border: 2px solid black;
+    border-radius:50px;
+    /* transition-property: all;
+    transition-duration:1s;
+    transition-timing-function:steps(3);
+    transition-delay: 0s; */
+   transition: all,1s,ease ease-in-out,0s;
+}
+.button:hover{
+    height:30px;
+    width:120px;
+    background-color: turquoise;
+}
+.button:active{
+    height:30px;
+    width:120px;
+    background-color: red;
+}
