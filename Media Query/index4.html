@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* Container styles */
+      .container {
+        background-color: beige; /* Background color for the container */
+        border: 5px solid black; /* Border for the container */
+        margin: 2px; /* Margin around the container */
+        padding: 2px; /* Padding inside the container */
+        display: flex; /* Use flexbox layout */
+        overflow: hidden;
+      }
+
+      /* Common styles for all boxes */
+      .box {
+        height: 200px; /* Fixed height for the boxes */
+        width: 200px; /* Fixed width for the boxes */
+        border: 2px solid brown; /* Border for the boxes */
+        margin: 2px; /* Margin around each box */
+        padding: 2px; /* Padding inside each box */
+      }
+
+      /* Individual background colors for each box */
+      #box1 {
+        background-color: aqua; /* Background color for Box 1 */
+      }
+      #box2 {
+        background-color: blue; /* Background color for Box 2 */
+      }
+      #box3 {
+        background-color: orange; /* Background color for Box 3 */
+      }
+      #box4 {
+        background-color: brown; /* Background color for Box 4 */
+      }
+
+      /* Media query for screens wider than 640px */
+      @media (min-width: 640px) {
+        .container {
+          flex-direction: row; /* Arrange boxes in a row for wide screens */
+        }
+      }
+
+      /* Media query for screens narrower than 640px */
+      @media (max-width: 640px) {
+        .container {
+          flex-direction: column; /* Stack boxes vertically for narrow screens */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Main container holding the boxes -->
+    <div class="container">
+      <!-- Individual boxes with unique background colors -->
+      <div class="box" id="box1">Box 1</div>
+      <div class="box" id="box2">Box 2</div>
+      <div class="box" id="box3">Box 3</div>
+      <div class="box" id="box4">Box 4</div>
+    </div>
+  </body>
+</html>
