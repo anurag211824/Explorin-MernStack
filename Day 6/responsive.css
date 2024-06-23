@@ -1,0 +1,87 @@
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+
+.navigationBar {
+    background-color: #70a1ff;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    overflow-x: hidden;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.logoHead {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.logo {
+    padding: 5px;
+}
+
+.head {
+    padding: 5px;
+}
+
+ul {
+    display: flex;
+    justify-content: flex-end;
+    gap: 50px;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 5px;
+    font-weight: 500;
+}
+
+.navlist {
+    display: flex;
+}
+
+/* Media query for .navigationBar */
+@media (max-width: 601px) {
+    .navigationBar {
+        flex-direction: column;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    ul {
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+        align-items: flex-start;
+    }
+
+    .logoHead {
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .navlist {
+        width: 100%;
+    }
+
+    a {
+        padding-left: 10px;
+    }
+}

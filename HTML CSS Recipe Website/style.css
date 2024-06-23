@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navContainer{
+    width:100vw;
+    background-color: rgb(103, 103, 181);
+    min-height: 80px;
+}
+#navlist{
+    list-style-type: none;
+}
+#navlogo{
+    font-size: 2.5rem;
+}

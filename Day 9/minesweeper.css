@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+.board {
+    display:inline-block;
+    height:400px;
+    width:300px;
+}
+.tile {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ccc;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #eee;
+    color: #333;
+}
+.revealed {
+    background-color: greenyellow;
+    color: #000;
+}
+.bomb {
+    background-color: #ff3333;
+    color: #fff;
+}
