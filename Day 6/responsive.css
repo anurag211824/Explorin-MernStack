@@ -1,87 +1,73 @@
-/* Global styles */
-* {
-    margin: 0;
+*{
+    margin:0px;
     padding: 0;
     box-sizing: border-box;
-    font-family: cursive;
 }
-
-.navigationBar {
-    background-color: #70a1ff;
-    width: 100vw;
+.home_And_About_Container{
+    width:100%;
+    display:flex;
+    flex-direction: column;
+}
+header{
     display: flex;
     justify-content: space-between;
-    overflow-x: hidden;
+    background-color: aquamarine;
 }
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-}
-
-.logoHead {
+.logoHead{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 1.5rem;
+    padding:10px;
 }
-
-.logo {
-    padding: 5px;
-}
-
-.head {
-    padding: 5px;
-}
-
-ul {
-    display: flex;
-    justify-content: flex-end;
-    gap: 50px;
+ul{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:50px;
     list-style-type: none;
+    padding:10px;
 }
-
-a {
+a{
+    font-size: larger;
     text-decoration: none;
-    font-size: 1rem;
-    padding: 5px;
-    font-weight: 500;
+}
+.servicesContainer{
+    width:100%;
 }
 
-.navlist {
+.contactContainer{
+    width:100%;
+}
+
+.homeContent{
+    margin-top:20px;
     display: flex;
+    justify-content: space-around;
+}
+.headline{
+    display: inline;
+    background-color: blue;
+    width:35%;
+}
+.intoParagraph{
+    width:65%;
+    background-color: yellow;
 }
 
-/* Media query for .navigationBar */
-@media (max-width: 601px) {
-    .navigationBar {
-        flex-direction: column;
-    }
-
-    nav {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    ul {
-        flex-direction: column;
-        width: 100%;
-        gap: 10px;
-        align-items: flex-start;
-    }
-
-    .logoHead {
-        width: 100%;
-        justify-content: flex-start;
-    }
-
-    .navlist {
-        width: 100%;
-    }
-
-    a {
-        padding-left: 10px;
-    }
+.aboutContent{
+    margin-top:20px;
+    display: flex;
+    justify-content: space-around; 
+}
+.ourMisson{
+  width:30%;
+  background-color: aquamarine;
+}
+.ourVision{
+  width:30%;
+  background-color: chartreuse;
+}
+.ourstory{
+   width:30%;
+   background-color: crimson;
 }
