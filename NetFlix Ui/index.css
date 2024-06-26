@@ -7,115 +7,127 @@
 html, body {
     width: 100%;
     height: 100%;
-    
 }
-.containerOne{
+
+.containerOne {
     background-image: url(Images/backgroundNetflix.jpg);
-   
     background-size: cover;
-    width:100%;
+    width: 100%;
     height: 100vh;
-    box-shadow: 10px -15px 50px brown;
-    margin:auto;
-    
+    box-shadow: inset 0 0 100px 100px rgb(8, 8, 8); /* Inner shadow */
+    margin: auto;
 }
-.heading{
+
+.heading {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding:10px;
+    padding: 10px;
 }
-.logoIcon{
-    height:50px
+
+.logoIcon {
+    height: 50px;
 }
-.logo{
-    width:30%;
+
+.logo {
+    width: 30%;
     text-align: center;
 }
-.language{
+
+.language {
     display: flex;
     justify-content: center;
     align-items: center;
     border: 2px solid white;
     border-radius: 5px;
-    gap:10px;
-     font-size: larger;
-    width:30%;
-    height:30px;
+    gap: 10px;
+    font-size: larger;
+    width: 30%;
+    height: 30px;
 }
-#lang{
+
+#lang {
     background: transparent;
 }
 
-.languageIcon{
-    height:20px
-
+.languageIcon {
+    height: 20px;
 }
-.out{
+
+.out {
     color: white;
 }
-.languageSignIn{
+
+.languageSignIn {
     display: flex;
-    justify-content:start;
+    justify-content: start;
     align-items: center;
     gap: 20px;
-    width:30%;
+    width: 30%;
     text-align: center;
     font-size: large;
     cursor: pointer;
 }
-.signIn{
+
+.signIn {
     background-color: orangered;
-    width:20%;
-    display:flex;
+    overflow: hidden;
+    display: flex;
     justify-content: center;
     align-items: center;
     color: white;
     font-size: large;
     padding: 5px;
     border-radius: 7px;
-    height:30px;
+    height: 30px;
     cursor: pointer;
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
 }
-.introText{
+
+.introText {
     color: white;
     text-align: center;
     display: flex;
     flex-direction: column;
-    padding:200px;
+    padding: 200px;
     line-height: 40px;
 }
-.large{
+
+.large {
     font-family: "Roboto", sans-serif;
-  font-weight: 900;
-  font-style: normal;
-  font-size: 48px;
-  
+    font-weight: 900;
+    font-style: normal;
+    font-size: 48px;
 }
-.small{
+
+.small {
     font-size: 20px;
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-style: normal;
-  
 }
-.email{
-    width:50%;
-    height:60px;
-    padding:15px;
-    border-radius: 5px;
+
+.email {
+    width: 50%;
+    height: 60px;
+    padding: 15px;
+    border-radius: 7px;
+    background: #d7d7d7;
 }
-.emailBox{
+
+.emailBox {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap:10px;
+    gap: 10px;
 }
-.getStarted{
+
+.getStarted {
     background-color: red;
-    padding:10px;
-    border-radius: 5px;
-    width:15%;
+    padding: 10px;
+    border-radius: 7px;
+    width: 15%;
     font-size: 20px;
     font-family: "Roboto", sans-serif;
     font-weight: 400;
