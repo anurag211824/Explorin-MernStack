@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    
+}
+.containerOne{
+    background-image: url(Images/backgroundNetflix.jpg);
+   
+    background-size: cover;
+    width:100%;
+    height: 100vh;
+    box-shadow: 10px -15px 50px brown;
+    margin:auto;
+    
+}
+.heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:10px;
+}
+.logoIcon{
+    height:50px
+}
+.logo{
+    width:30%;
+    text-align: center;
+}
+.language{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+    border-radius: 5px;
+    gap:10px;
+     font-size: larger;
+    width:30%;
+    height:30px;
+}
+#lang{
+    background: transparent;
+}
+
+.languageIcon{
+    height:20px
+
+}
+.out{
+    color: white;
+}
+.languageSignIn{
+    display: flex;
+    justify-content:start;
+    align-items: center;
+    gap: 20px;
+    width:30%;
+    text-align: center;
+    font-size: large;
+    cursor: pointer;
+}
+.signIn{
+    background-color: orangered;
+    width:20%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: large;
+    padding: 5px;
+    border-radius: 7px;
+    height:30px;
+    cursor: pointer;
+}
+.introText{
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding:200px;
+    line-height: 40px;
+}
+.large{
+    font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 48px;
+  
+}
+.small{
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  
+}
+.email{
+    width:50%;
+    height:60px;
+    padding:15px;
+    border-radius: 5px;
+}
+.emailBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+}
+.getStarted{
+    background-color: red;
+    padding:10px;
+    border-radius: 5px;
+    width:15%;
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    cursor: pointer;
+}
